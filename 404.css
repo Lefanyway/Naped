@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --text-color: #fefbfb;
+  --title-color: #8257e6;
+  --bg-color: #13131f;
+  --subtitle-color: #969696;
+  --surface-color-hover: rgba(81, 79, 79, 0.2);
+  --bg-scroll: #282830;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 144rem;
+
+  margin: 0 auto;
+}
+
+/*  ================================================================================================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.6rem;
+  margin-bottom: 11.4rem;
+}
+
+header .logo {
+  color: var(--title-color);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 6rem;
+}
+
+li a {
+  color: var(--text-color);
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-decoration: none;
+
+  position: relative;
+  padding: 0 0.2rem;
+  background: linear-gradient(
+    180deg,
+    #c4c4c4 0%,
+    rgba(196, 196, 196, 0) 85.42%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ==================================================Main======================================== */
+
+main {
+  width: 144rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18rem;
+}
+
+main img {
+  margin-right: 5rem;
+}
+
+main h1 {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: var(--text-color);
+  width: 45.7rem;
+  margin-bottom: 2rem;
+}
+
+main p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  color: var(--subtitle-color);
+  width: 49.5rem;
+  margin-bottom: 2rem;
+}
+
+main button {
+  background: var(--title-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+}
+
+main button:hover {
+  filter: brightness(0.9);
+}
+
+main button a {
+  text-decoration: none;
+  font-family: "Lexend Deca";
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  color: var(--text-color);
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error p {
+  font-family: "Inter";
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  color: var(--subtitle-color);
+  padding-top: 3rem;
+  width: 29.8rem;
+}

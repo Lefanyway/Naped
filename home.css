@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --text-color: #fefbfb;
+  --title-color: #8257e6;
+  --bg-color: #13131f;
+  --subtitle-color: #969696;
+  --surface-color-hover: rgba(81, 79, 79, 0.2);
+  --bg-scroll: #282830;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 144rem;
+  height: 268.5rem;
+  margin: 0 auto;
+}
+
+/* ====================================CONTEUDO NAVBAR==================================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.6rem;
+  margin-bottom: 11.4rem;
+}
+
+header .logo {
+  color: var(--title-color);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 6rem;
+}
+
+a {
+  color: var(--text-color);
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-decoration: none;
+
+  position: relative;
+  padding: 0 0.2rem;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  background-color: var(--title-color);
+  height: 0.3rem;
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  transition: 0.2s;
+}
+
+li a:hover:after {
+  width: 100%;
+}
+
+header button {
+  width: 15rem;
+  height: 4rem;
+  font-family: "Lexend Deca";
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--text-color);
+  background-color: transparent;
+  border: 1px solid var(--title-color);
+  border-radius: 3rem;
+}
+
+header button:hover {
+  background-color: var(--surface-color-hover);
+  transition: all 0.2s;
+}
+
+.container-title h1 {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: var(--text-color);
+  width: 30.3rem;
+  margin-bottom: 1.1rem;
+}
+
+.container-title p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: var(--subtitle-color);
+  width: 49.2rem;
+  margin-bottom: 8rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ====================================CONTEUDO DO TOP====================================*/
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.content button:hover {
+  filter: brightness(0.9);
+}
+
+.first-news {
+  position: relative;
+}
+
+.first-news img {
+  width: 100rem;
+  height: 40.6rem;
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent 90%);
+
+  mask-image: linear-gradient(to bottom, black, transparent 90%);
+}
+
+.first-news p {
+  width: 89rem;
+  position: absolute;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: var(--text-color);
+  bottom: 2rem;
+  left: 6rem;
+}
+
+.first-news button {
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--title-color);
+  color: var(--text-color);
+  font-family: "Lexend Deca";
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding: 1rem 1rem;
+
+  position: absolute;
+  left: 3rem;
+  top: 1.7rem;
+}
+
+/* ====================================CONTEUDO DO SCROLL====================================*/
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.box-news {
+  display: flex;
+  gap: 2rem;
+}
+
+.box-news-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.first-text {
+  width: 39.4rem;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--text-color);
+}
+
+.second-text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: var(--subtitle-color);
+  width: 33rem;
+}
+
+.date-text {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--subtitle-color);
+}
+
+.box-news-texts button {
+  width: 10rem;
+  height: 3rem;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: #fefbfb;
+  background-color: var(--title-color);
+  border: none;
+  border-radius: 3px;
+}
+
+.image-news {
+  width: 20rem;
+  height: 15.1rem;
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent 90%);
+  mask-image: linear-gradient(to bottom, black, transparent 90%);
+}
+
+.container-news {
+  height: 72rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  overflow: auto;
+}
+.container-news::-webkit-scrollbar {
+  background-color: var(--bg-scroll);
+  border-radius: 3px;
+}
+.container-news::-webkit-scrollbar-thumb {
+  background-color: var(--title-color);
+  border-radius: 5px;
+}
+
+/* ====================================CONTAINER DA DIREITA==================================== */
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.container-right img {
+  width: 40rem;
+  height: 19rem;
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent 95%);
+  mask-image: linear-gradient(to bottom, black, transparent 95%);
+}
+
+.container-right p {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--text-color);
+  width: 35rem;
+}
+
+.container-right span {
+  font-family: "Lexend Deca";
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--text-color);
+  background: var(--title-color);
+  border-radius: 0.3rem;
+  border: none;
+  padding: 1rem 1.1rem;
+}
+.container-right span:hover {
+  filter: brightness(0.9);
+}
+
+.content1-right {
+  position: relative;
+}
+
+.content1-right p {
+  position: absolute;
+  top: 12rem;
+  left: 2rem;
+}
+
+.content1-right span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.content2-right {
+  position: relative;
+}
+
+.content2-right p {
+  position: absolute;
+  top: 12rem;
+  left: 2rem;
+}
+.content2-right span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.content3-right {
+  position: relative;
+}
+
+.content3-right p {
+  position: absolute;
+  top: 12rem;
+  left: 2rem;
+}
+
+.content3-right span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.content4-right {
+  position: relative;
+}
+
+.content4-right p {
+  position: absolute;
+  top: 12rem;
+  left: 2rem;
+}
+.content4-right span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.content5-right {
+  position: relative;
+}
+
+.content5-right p {
+  position: absolute;
+  top: 12rem;
+  left: 2rem;
+}
+.content5-right span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.container-right h1 {
+  width: 25rem;
+  margin-top: 3rem;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2rem;
+  color: var(--text-color);
+  padding: 0 0 1.3rem 0;
+  border-bottom: var(--title-color) 3px solid;
+}
+
+.container-righttwo {
+  display: flex;
+  flex-direction: column;
+  gap: 4.7rem;
+}
+
+/* ====================================ULTIMAS NOTICIAS =======================================*/
+.secaofinal {
+  width: 100%;
+}
+
+.secaofinal h1 {
+  width: 30rem;
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2rem;
+  color: var(--text-color);
+  margin: 10rem 0 4rem;
+  border-bottom: var(--title-color) 3px solid;
+  padding-bottom: 1rem;
+}
+
+.ultimas-noticias img {
+  width: 43rem;
+  height: 30rem;
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent 90%);
+  mask-image: linear-gradient(to bottom, black, transparent 90%);
+}
+
+.ultimas-noticias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+}
+
+.secaofinal span {
+  font-family: "Lexend Deca";
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--text-color);
+  background: var(--title-color);
+  border-radius: 0.3rem;
+  border: none;
+  padding: 1rem 1.1rem;
+}
+
+.secaofinal span:hover {
+  filter: brightness(0.9);
+}
+
+.secaofinal p {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--text-color);
+  width: 35rem;
+}
+
+/* ====================================FOOTER=======================================*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+footer h1 {
+  color: var(--title-color);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  cursor: pointer;
+}
+
+footer p {
+  width: 50rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4re;
+  text-align: center;
+  color: var(--subtitle-color);
+}
+
+.footer-content1 {
+  position: relative;
+}
+
+.footer-content1 p {
+  position: absolute;
+  top: 22rem;
+  left: 3rem;
+}
+
+.footer-content1 span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.footer-content2 {
+  position: relative;
+}
+
+.footer-content2 p {
+  position: absolute;
+  top: 22rem;
+  left: 3rem;
+}
+
+.footer-content2 span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.footer-content3 {
+  position: relative;
+}
+
+.footer-content3 p {
+  position: absolute;
+  top: 22rem;
+  left: 3rem;
+}
+
+.footer-content3 span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.footer-content4 {
+  position: relative;
+}
+
+.footer-content4 p {
+  position: absolute;
+  top: 22rem;
+  left: 3rem;
+}
+
+.footer-content4 span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.footer-content5 {
+  position: relative;
+}
+
+.footer-content5 p {
+  position: absolute;
+  top: 22rem;
+  left: 3rem;
+}
+
+.footer-content5 span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.footer-content6 {
+  position: relative;
+}
+
+.footer-content6 p {
+  position: absolute;
+  top: 22rem;
+  left: 3rem;
+}
+
+.footer-content6 span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+/* ========================Responsividade================================== */
+
+@media (max-width: 375px) {
+  .container {
+    width: 320px;
+  }
+}
