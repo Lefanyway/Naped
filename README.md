@@ -1,4 +1,4 @@
-O **Naped** é um blog desenvolvido utilizando HTML e CSS puro. Ele oferece conteúdo voltado ao público nerd, abordando temas como séries, filmes, animes e games. O site foi construído com uma estrutura simples e estilização direta, sem frameworks ou bibliotecas externas, focando na essência do design clássico da web. Para mais detalhes, você pode visitar o blog [Naped](https://blodnaped.netlify.app/).
+O **Naped** é um blog. Uma página estática desenvolvida utilizando HTML e CSS puro. Ele oferece conteúdo voltado ao público nerd, abordando temas como séries, filmes, animes e games. O site foi construído com uma estrutura simples e estilização direta, sem frameworks ou bibliotecas externas, focando na essência do design clássico da web. Para mais detalhes, você pode visitar o blog [Naped](https://blodnaped.netlify.app/).
 
 ![image](https://github.com/user-attachments/assets/2ee66f6a-d16a-4ba6-9a9d-225d8daa6dab)
 
